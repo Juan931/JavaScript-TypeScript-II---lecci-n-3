@@ -26,6 +26,12 @@ En esta pequeña tarea, se le da una serie de números separados por espacios y 
 
 */
 
+function highAndLow(numbers){
+  var arr = numbers.split(" ").map( (x) => parseInt(x) );
+  var max = arr.reduce((p, c) => p > c ? p : c );
+  var min = arr.reduce((p, c) => p < c ? p : c );
+  return max+" "+min;
+}
 //Reto3
 
 /*
